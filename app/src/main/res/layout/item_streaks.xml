@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/count_streak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Losing Streak: 23"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/team_streak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="1961 Philadelphia Phillies"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/count_streak"></TextView>
+
+    <TextView
+        android:id="@+id/description_streak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:padding="12dp"
+        android:text="The owners of this unfortunate streak are the 1961 Phillies, who lost 23 straight games in a season in which they finished 47-107. They finally beat the Milwaukee Braves 7-4 on Aug. 20, 1961 for their first win in nearly a month. The Cubs finished second-to-last in the National League standings that season, but still finished 17 games ahead of the Phillies. The 1988 Baltimore Orioles lost 21 straight games to start the season and are the only other team since 1901 to lose more than 20 in a row. The 1969 Expos, 1943 Philadelphia Athletics, 1916 Athletics and 1906 Boston Americans all lost 20 straight – a mark this year’s Orioles narrowly avoided by ending their losing streak at 19."
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team_streak"></TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

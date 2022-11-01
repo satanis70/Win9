@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/playersFragment"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/playersFragment"
+        android:name="com.example.win9.PlayersFragment"
+        android:label="fragment_players"
+        tools:layout="@layout/fragment_players" >
+        <action
+            android:id="@+id/action_playersFragment_to_termsFragment"
+            app:destination="@id/termsFragment" />
+        <action
+            android:id="@+id/action_playersFragment_to_streaksFragment"
+            app:destination="@id/streaksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/termsFragment"
+        android:name="com.example.win9.TermsFragment"
+        android:label="fragment_terms"
+        tools:layout="@layout/fragment_terms" >
+        <action
+            android:id="@+id/action_termsFragment_to_playersFragment"
+            app:destination="@id/playersFragment" />
+        <action
+            android:id="@+id/action_termsFragment_to_streaksFragment"
+            app:destination="@id/streaksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/streaksFragment"
+        android:name="com.example.win9.StreaksFragment"
+        android:label="fragment_streaks"
+        tools:layout="@layout/fragment_streaks" >
+        <action
+            android:id="@+id/action_streaksFragment_to_playersFragment"
+            app:destination="@id/playersFragment" />
+        <action
+            android:id="@+id/action_streaksFragment_to_termsFragment"
+            app:destination="@id/termsFragment" />
+    </fragment>
+
+
+</navigation>
